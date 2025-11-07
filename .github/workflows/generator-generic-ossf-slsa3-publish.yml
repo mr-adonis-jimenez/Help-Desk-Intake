@@ -21,10 +21,11 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       digests: ${{ steps.hash.outputs.digests }}
-
+    permissions:
+      contents: read
+      
     steps:
       - uses: actions/checkout@v4
-
       # ========================================================
       #
       # Step 1: Build your artifacts.
