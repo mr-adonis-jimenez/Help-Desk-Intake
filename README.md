@@ -24,5 +24,57 @@ A lightweight, browser-based IT help desk intake system built with HTML, CSS, an
 - Browser localStorage
 - GitHub Pages compatible
 
+- CI Security Checklist
+
+This project follows security best practices for GitHub Actions and CI/CD pipelines.
+The checklist below documents the controls in place.
+
+GitHub Actions Security
+
+ Explicit permissions blocks defined for all workflows
+
+ GITHUB_TOKEN scoped using least privilege (read-only where applicable)
+
+ Write permissions granted only to workflows that require them (e.g., Pages deploy)
+
+ No use of default implicit read-write permissions
+
+Dependency & Supply Chain Security
+
+ Dependabot enabled for automated dependency monitoring
+
+ Dependency updates reviewed via pull requests
+
+ No untrusted third-party GitHub Actions used
+
+Code Quality & Integrity
+
+ CI linting enforced for HTML, CSS, and JavaScript
+
+ Cross-platform CI test matrix validation
+
+ Pre-commit hooks configured to prevent low-quality commits
+
+Performance & Accessibility
+
+ Automated Lighthouse audits executed in CI
+
+ Automated accessibility audits using axe-core
+
+ Semantic HTML and WCAG-aligned accessibility practices enforced
+
+Security Policy & Governance
+
+ Responsible disclosure policy documented in SECURITY.md
+
+ Contribution standards documented in CONTRIBUTING.md
+
+ Open-source licensing clearly defined (MIT License)
+
+Security Philosophy
+
+This project intentionally applies production-grade CI/CD security hygiene while remaining lightweight and framework-free.
+All automation is scoped to the minimum permissions required to complete each task, reducing risk and adhering to the principle of least privilege.
+
 ## Purpose
 Demonstrates IT support workflows, data handling, and frontend fundamentals using a zero-cost, Chromebook-friendly setup.
