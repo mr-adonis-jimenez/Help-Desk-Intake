@@ -26,3 +26,6 @@ jobs:
 
       - name: Run ESLint
         run: npx eslint src || true
+
+- name: Claude Code Action Official
+- uses: anthropics/claude-code-action@v1
